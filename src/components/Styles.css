@@ -160,8 +160,8 @@
     flex-direction: column;
 }
 
-.contacts button{
-    margin: 10px 0;
+button{
+    margin: 10px 5px;
     outline: none;
     border: none;
     padding: 10px 40px;
@@ -214,4 +214,34 @@ input{
     padding: 8px;
     border-radius: 5px;
     margin: 5px 0;
+}
+
+.top-sec{
+    display: flex;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.profile{
+    height: 128px;
+    width: 128px;
+    background: #1e1e1e;
+    border-radius: 50%;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 10px 5px 0;
+}
+
+.spacer{
+    width: 80px;
 }

@@ -7,7 +7,7 @@ import Contacts from './Contacts'
 function BodyContent() {
     return (
         <div className='content'>
-            <Contacts />
+            <About />
         </div>
     )
 }
