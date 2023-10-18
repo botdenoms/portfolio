@@ -1,9 +1,10 @@
 .content{
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     /* background: #23bc64; */
 }
 
@@ -41,4 +42,108 @@
     cursor: pointer;
     font-size: 22px;
     font-weight: 800;
+}
+
+.categories{
+    display: flex;
+    margin: 5px;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category{
+    user-select: none;
+    margin: 0 5px;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+
+.active{
+    border-bottom: 2px solid #1e1e1e;
+}
+
+.work-card{
+    padding: 8px;
+    margin: 10px 0;
+    height: calc(100vh * .7);
+    width: calc(100vw * .9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #1e1e1e; */
+}
+
+.ctrl{
+    height: 28px;
+    width: 28px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card-content{
+    display: flex;
+}
+
+.infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 36px;
+    width: 36px;
+    background: #1e1e1e;
+    border-radius: 50%;
+}
+
+.words{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.words span{
+    font-size: 14px;
+    /* font-weight: 500; */
+}
+
+.hd{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+}
+
+.link{
+    height: 24px;
+    width: 24px;
+    background: #c1c1c1;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.thumb{
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+    background: red;
 }
