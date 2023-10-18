@@ -147,3 +147,71 @@
     width: 60%;
     background: red;
 }
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts button{
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    background: #23cb64;
+    cursor: pointer;
+    border-radius: 5px;
+    width: min-content;
+    user-select: none;
+}
+
+.icon-sml{
+    height: 24px;
+    width: 24px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+}
+
+.row-wd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-wd-bl{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2px 0;
+}
+
+.hd-sc{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+textarea{
+    border: none;
+    background: #c1c1c1;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input{
+    border: none;
+    background: #c1c1c1;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
