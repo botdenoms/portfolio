@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import '../components/Styles.css'
+import logo from '../assets/logo.svg'
 
-function AppBar() {
+function AppBar({tab=0, handler=false}) {
     const [index, setIndex] = useState(0)
     const navs = ["Works", "About", "Contacts"]
 
@@ -23,18 +24,27 @@ function AppBar() {
                     item2.current.style.display = 'block'
                     item3.current.style.display = 'block'
                     setIndex(i)
+                    if (handler !== false) {
+                        handler(i)
+                    }
                     break;
                 case 1:
                     item1.current.style.display = 'block'
                     item2.current.style.display = 'none'
                     item3.current.style.display = 'block'
                     setIndex(i)
+                    if (handler !== false) {
+                        handler(i)
+                    }
                     break;
                 case 2:
                     item1.current.style.display = 'block'
                     item2.current.style.display = 'block'
                     item3.current.style.display = 'none'
                     setIndex(i)
+                    if (handler !== false) {
+                        handler(i)
+                    }
                     break;
                 default:
                     // reload
@@ -45,7 +55,9 @@ function AppBar() {
 
     return (
         <div className="appbar">
-            <div className="logo"></div>
+            <div className="logo">
+                <img src={logo} alt="logo" className='logo-img'/>
+            </div>
             <span className="focusdiv" onClick={()=>itemClick(3)}>{navs[index]}</span>
             <div className="nav">
                 <div className="nav-item" onClick={()=>itemClick(0)} ref={item1}>Works</div>

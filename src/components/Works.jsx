@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import next from '../assets/next.svg'
+import prev from '../assets/prev.svg'
 
 function Works() {
     const cats = ["Category 1", "Category 2", "Category 3"]
@@ -35,7 +37,9 @@ function Works() {
                 }
             </div>
             <div className="work-card">
-                <span className='ctrl'></span>
+                <span className='ctrl'>
+                    <img src={prev} alt="icon" className='logo-img'/>
+                </span>
                 <div className="card-content">
                     <div className="infor">
                         <div className="titles">
@@ -62,7 +66,9 @@ function Works() {
                         
                     </div>
                 </div>
-                <span className='ctrl'></span>
+                <span className='ctrl'>
+                    <img src={next} alt="icon" className='logo-img'/>
+                </span>
             </div>
         </div>
     )

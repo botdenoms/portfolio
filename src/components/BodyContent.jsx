@@ -4,10 +4,12 @@ import Works from './Works'
 import About from './About'
 import Contacts from './Contacts'
 
-function BodyContent() {
+function BodyContent({tab=0}) {
     return (
         <div className='content'>
-            <About />
+            { tab === 0 && <Works />}
+            { tab === 1 && <About />}
+            { tab === 2 && <Contacts />}
         </div>
     )
 }

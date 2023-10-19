@@ -1,19 +1,20 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { useState } from 'react'
 import './App.css'
 
 import AppBar from './components/AppBar'
 import BodyContent from './components/BodyContent'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [tab, setTab] = useState(0)
 
+  const tabHandler = (i) =>{
+    setTab(i)
+  }
 
   return (
     <>
-      <AppBar />
-      <BodyContent />
+      <AppBar tab={tab} handler={tabHandler}/>
+      <BodyContent tab={tab}/>
     </>
   )
 }

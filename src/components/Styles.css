@@ -20,10 +20,18 @@
 }
 
 .logo{
+    position: relative;
     height: 36px;
     width: 36px;
-    background: #1e1e1e;
+    /* background: #1e1e1e; */
     border-radius: 5px;
+}
+
+.logo-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
 }
 
 .nav{
@@ -81,12 +89,26 @@
 }
 
 .ctrl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     height: 28px;
     width: 28px;
-    background: red;
+    /* background: #c1c1c1; */
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
+}
+
+.ctrl::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #c1c1c1;
+    transform: scale(1.5, 1.5);
 }
 
 .card-content{
@@ -173,9 +195,10 @@ button{
 }
 
 .icon-sml{
+    position: relative;
     height: 24px;
     width: 24px;
-    background: #1e1e1e;
+    /* background: #1e1e1e; */
     border-radius: 50%;
     margin: 0 5px 0 0;
 }
